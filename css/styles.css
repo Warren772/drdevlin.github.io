@@ -233,6 +233,10 @@ div.skills img {
   width: 6rem;
 }
 
+.intent.photo{
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+
 div.skills.html {
   grid-area: 4 / 4 / span 1 / span 1;
 }
