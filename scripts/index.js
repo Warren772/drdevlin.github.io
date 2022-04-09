@@ -18,6 +18,17 @@ function shuffle(array) {
   return array;
 }
 
+/* Make Single-Page-Application render a new page. */
+var homepage;
+function intention(){ 
+  homepage = document.body.innerHTML;
+  document.body.innerHTML = "";
+}
+/* Re-render homepage for single page application. */ 
+function goBackHome(){
+  document.body.innerHTML = homepage; 
+}
+
 /* Randomly color the colorblocks */
 const colorBlocksNL = document.querySelectorAll('.colorblock'); //Bind all colorblocks to a NodeList
 const colorBlocks = [];
